@@ -15,7 +15,7 @@ int main()
     dq.pop_front();
 
     cout<<endl;
-    for (int i = 0; i < dq.size(); i++)
+    for (int i = 0; i < dq.size(); i++)//printing element using random access
     {
         cout<<dq[i]<<" ";
     }
