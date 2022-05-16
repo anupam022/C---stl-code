@@ -53,24 +53,32 @@ void printSmallerSorted(int price)
     while(it1!=m.end())
     {
         cout<<it1->second<<" "<<it1->first<<endl;
+    it1++;
     }
 }
 };
 int main()
 {
     DS data;
-    int price;
-    string name;
+    // int price;
+    // string name;
     
-    cout<<"Enter price and name: "<<endl;
-    for(int i=1;i<=4;i++){
-    cin>>price>>name;
-    }
-    cout<<"Price \t Name"<<endl;
-    for(int i=1;i<=4;i++){
-    data.add(price,name);}
-    
-   
-    
+    // cout<<"Enter price and name: "<<endl;
+    // for(int i=1;i<=4;i++){
+    // cin>>price>>name;
+    // }
+    // cout<<"Price \t Name"<<endl;
+    // for(int i=1;i<=4;i++){
+    // data.add(price,name);}
+    cout<<"After Inserting: "<<endl;
+  
+   data.add(20,"pqr");
+   data.add(40,"abc");
+   data.add(10,"xyz");
+cout<<"After sorting: "<<endl;
+    data.printSorted();
+
+    data.printGreaterSorted(30);
+    data.printSmallerSorted(20);
     return 0;
 }
